@@ -112,7 +112,7 @@ footer {
 }
 .fas {
     margin-right: 10px; /* Adds space between the icon and the text */
-    color: #333; /* Sets the icon color */
+    color: #fff; /* Sets the icon color */
 }
 
 .fas.fa-envelope {
