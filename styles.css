@@ -110,19 +110,6 @@ footer {
     width: 100%;
     bottom: 5px;
 }
-/* Custom icon styles */
-.fas {
-    margin-right: 10px; /* Adds space between the icon and the text */
-    color: #333; /* Sets the icon color to blue (hex code for blue) */
-}
 
-/* Specific icon styles (if needed) */
-.fas.fa-envelope {
-    color: #333; /* Ensures the email icon is blue */
-}
-
-.fas.fa-phone-alt {
-    color: #333; /* Ensures the phone icon is blue */
-}
 
 
