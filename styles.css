@@ -110,15 +110,18 @@ footer {
     width: 100%;
     bottom: 5px;
 }
+/* Font Awesome icon styles */
 .fas {
     margin-right: 10px; /* Adds space between the icon and the text */
-    color: #fff; /* Sets the icon color */
+    color: #ffffff; /* Sets the icon color to white */
 }
 
+/* Specific icon styles (optional, in case you want different colors) */
 .fas.fa-envelope {
-    color: #d14836; /* Custom color for the email icon */
+    color: #ffffff; /* Ensures the email icon is white */
 }
 
 .fas.fa-phone-alt {
-    color: #34a853; /* Custom color for the phone icon */
+    color: #ffffff; /* Ensures the phone icon is white */
 }
+
