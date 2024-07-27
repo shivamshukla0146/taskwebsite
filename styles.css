@@ -110,6 +110,8 @@ footer {
     width: 100%;
     bottom: 5px;
 }
-
+footer:hover {
+    background-color: #555;
+}
 
 
