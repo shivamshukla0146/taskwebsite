@@ -24,7 +24,8 @@
             <p>You can contact us via the form below.</p>
             <form action="#" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" oninvalid="this.setCustomValidity('Name is required')" required>
+                <input type="text" id="name" name="name"  oninvalid="this.setCustomValidity('Enter User Name Here')"
+       oninput="this.setCustomValidity('')" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <label for="message">Message:</label>
