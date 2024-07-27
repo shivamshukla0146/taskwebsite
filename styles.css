@@ -122,7 +122,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px; /* Margin above the footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 
