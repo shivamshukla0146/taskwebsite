@@ -101,6 +101,9 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #A2BAF5;
 }
+footer:hover {
+    background-color: #555;
+}
 footer {
     background: #333;
     color: #fff;
@@ -110,8 +113,6 @@ footer {
     width: 100%;
     bottom: 5px;
 }
-footer:hover {
-    background-color: #555;
-}
+
 
 
