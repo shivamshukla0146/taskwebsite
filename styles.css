@@ -21,7 +21,7 @@ header:hover {
     background-color: #555;
 }
 header h1 {
-    margin-left: 10px;
+    margin: 0;
 }
 nav ul {
     list-style: none;
