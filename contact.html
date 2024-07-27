@@ -24,12 +24,14 @@
             <p>You can contact us via the form below.</p>
             <form action="#" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name"  oninvalid="this.setCustomValidity('Enter User Name Here')"
+                <input type="text" id="name" name="name"  oninvalid="this.setCustomValidity('Enter Name Here')"
        oninput="this.setCustomValidity('')" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email"  oninvalid="this.setCustomValidity('Enter Email Here')"
+       oninput="this.setCustomValidity('')"required>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4"  oninvalid="this.setCustomValidity('Enter Message Here')"
+       oninput="this.setCustomValidity('')" required></textarea>
                 <input type="submit" value="Submit">
             </form>
         </section>
