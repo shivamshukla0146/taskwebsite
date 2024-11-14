@@ -1,1 +1,492 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    padding-top: 80px; /* Adjust this to match the header height */
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+header .logo h1 {
+    font-size: 1.8em;
+    color: #f9d342;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    color: #838181;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Hover effect on navigation links */
+nav ul li a:hover {
+    color: #f9d342;
+}
+
+/* Menu Toggle for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+/* Responsive Design: Hide menu on small screens by default */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the menu by default on small screens */
+        position: absolute;
+        top: 60px; /* Adjust this based on header height */
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Show menu toggle button on small screens */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Show the menu when the 'active' class is added */
+    nav ul.active {
+        display: block;
+    }
+}
+
+/* Optional: You can add more styling for mobile view of the navigation items */
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Hero Section */
+#home {
+    background-color: #fd7e14;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+}
+
+.hero-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #f9d342;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: #333;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c6a31e;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #413f3f;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #615e5e;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #fd7e14;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px;
+    width: auto; /* Default width for larger screens */
+    height: 350px; /* Fixed height to ensure same size */
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #ccc;
+}
+
+.services p {
+    font-size: 0.90em;
+    color: rgb(95, 93, 93);
+}
+
+.service-item-image {
+    width: 100%;
+    max-width: 300px; /* Adjust this to your preferred image size */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space between image and text */
+}
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #f9d342;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    background-color: #663e1d;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #fd7e14;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #afb137;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .services .service-item {
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero-content img {
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 1024px) {
+    .cta-button {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .hero-content img {
+        max-width: 80%;
+    }
+
+    .service-item {
+        width: 300px;
+    }
+}
+
+.about-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    height: 300px; /* Set a fixed height to make all boxes the same size */
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Hide overflow if content exceeds the fixed height */
+}
+
+/* Initially hide the button */
+.top-arrow-container {
+    position: fixed;
+    bottom: 20px;  /* Distance from the bottom of the page */
+    right: 20px;   /* Distance from the right side of the page */
+    z-index: 10000; /* Ensure the button is above other content */
+    display: block; /* Ensure it's visible */
+}
+
+/* Styling for the scroll to top button */
+/* Initially hide the button */
+.top-arrow-btn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #24a897;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    visibility: hidden; /* Default hidden */
+}
+
+/* Make it visible when the class 'visible' is added */
+.top-arrow-btn.visible {
+    visibility: visible;
+    display: flex; /* Show the button when scrolled down */
+}
+
+/* Hover effect */
+.top-arrow-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Optional: Button for smaller screens */
+@media (max-width: 768px) {
+    .top-arrow-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1.3em;
+    }
+}
+
+
+/* General container styling */
+.action-btn-2 {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-btns-bottom {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.action-btns-bottom .btn {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.btn-success {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+}
+
+.btn-warning {
+    background-color: #FFC107; /* Yellow for phone */
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+
+/* Basic styling */
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Button styling */
+.btn-success-gradiant {
+    background: linear-gradient(45deg, #FFC107, #FFC107); /* Gradient colors */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-success-gradiant:hover {
+    background: linear-gradient(45deg, #FFC107, #FFC107); /* Darker gradient on hover */
+    color: white;
+    text-decoration: none;
+}
+
+/* Arrow Icon Styling */
+.btn-arrow i {
+    margin-left: 8px;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.btn-success-gradiant:hover .btn-arrow i {
+    transform: translateX(5px); /* Moves the arrow slightly to the right on hover */
+}
 
